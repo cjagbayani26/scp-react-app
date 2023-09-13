@@ -2,6 +2,7 @@
     {
         "item": "SCP-002",
         "object": "Euclid",
+        "icon":
         "containment": "SCP-002 must maintain a continuous connection to a suitable power source to remain in its recharging state; during power outages, an emergency barrier should be deployed, and the vicinity evacuated. Upon power restoration, alternating bursts of X-ray and ultraviolet light are to be directed at the area until SCP-002 is reconnected to its power source. Negative air pressure must be maintained in the containment area. Teams of at least two individuals must remain within 20 meters of SCP-002 or its containment area, maintaining physical contact to confirm each other's presence due to potential sensory distortions caused by proximity to the object.",
         "description": "SCP-002 is a grotesque, tumor-like growth measuring approximately 60 m³ (or 2000 ft³), featuring an iron valve hatch on one side leading to an interior space that inexplicably resembles a standard, modestly sized low-rent apartment. Strangely, the room possesses a solitary window, though its existence cannot be discerned from the exterior. Inside, the furniture consists of what appears to be sculpted bone, woven hair, and assorted biological materials originating from the human body, with each object displaying distinct or fragmented DNA sequences upon examination. Further details on its discovery can be found in the Mulhausen Report [cross-ref:document00.023.603]"
     },
