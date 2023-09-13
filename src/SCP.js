@@ -9,7 +9,7 @@ function SCP({scp})
             <h3>ITEM #: {scp.item}</h3>
             <h2>Object Class:</h2>
             <h3>{scp.object}</h3>
-            <img src={scp.icon} />
+            <img src={`/${scp.icon}`} alt={scp.icon} />
             <h2>Containment Procedure: </h2>
             <p>{scp.containment}</p>
             <h2>Description:</h2>
