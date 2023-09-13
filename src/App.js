@@ -1,18 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import SCP from './SCP';
+import data from './data.json'
+import SCP from './SCP'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './Nav';
 
 function App() {
   return (
-    <>
-    {
-      DataTransfer.map(
-        scp => (
-          <SCP scp={scp} />
-        )
-      )
-    }
-    </>
+    <Router>
+      <Nav data={data} />
+
+      <Routes>
+        {
+          data.map(
+            scp => (
+              <Route key={scp.item}
+                     path={`${scp.item}`}
+                     element={<SCP scp={scp} />}
+                     />
+
+              
+            )
+          )
+        }
+      </Routes>
+
+    </Router>
   );
 }
 

@@ -1,7 +1,10 @@
+import './scp.css';
+
+
 function SCP({scp})
 {
     return(
-        <div>
+        <div className="component container">
             <h2>Subject:</h2>
             <h3>ITEM #: {scp.item}</h3>
             <h2>Object Class:</h2>
