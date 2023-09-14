@@ -9,12 +9,11 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
 }
 
 .logo {
     justify-content: flex-start;
+    margin: 10px;
     height: 90px;
 }
 
@@ -24,7 +23,7 @@ nav {
     margin-bottom: 1vh;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     border-radius: 10px;
     justify-content: center;
@@ -35,8 +34,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center-align items horizontally */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 nav li {
@@ -51,7 +50,7 @@ nav li {
     color: white;
     border-radius: 5px;
     background-color: rgb(255, 0, 0);
-    margin: 5px; /* Add spacing between items */
+    margin: 5px; 
 }
 
 .link:hover {
@@ -60,3 +59,52 @@ nav li {
     color: rgb(250, 249, 249);
 }
 
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .link {
+        font-size: medium; 
+        padding: 10px; 
+    }
+}
+
+/* Media Query for Medium Screens */
+@media screen and (max-width: 992px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav li {
+        padding: 10px 0; 
+    }
+
+    .link {
+        font-size: medium; 
+        padding: 10px; 
+    }
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 576px) {
+    .logo {
+        height: 60px; 
+    }
+
+    nav {
+        padding: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav li {
+        padding: 8px 0; 
+    }
+
+    .link {
+        font-size: small; 
+        padding: 8px; 
+}
+}

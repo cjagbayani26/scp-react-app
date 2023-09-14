@@ -56,6 +56,8 @@ h3 {
     border: 2px solid #333;
 }
 
+/* ... your previous styles ... */
+
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     h1 {
@@ -79,6 +81,13 @@ h3 {
         text-align: left;
     }
 
+    p {
+        font-size: 1rem; /* Adjust paragraph text size for smaller screens */
+        max-width: none;
+        margin-right: 0;
+        text-align: left;
+    }
+
     .container {
         margin-right: 0;
         box-shadow: none;
@@ -88,3 +97,60 @@ h3 {
         width: 100%;
     }
 }
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 4.5rem;
+        max-width: 800px;
+        margin-right: 10%;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        max-width: 968px;
+        margin-right: 10%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        max-width: 968px;
+        margin-right: 10%;
+    }
+
+    p {
+        font-size: 1.2rem; 
+        max-width: none;
+        margin-right: 0;
+        text-align: left;
+    }
+}
+
+/* Media Query for Extra Small Screens */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 0.9rem; 
+        max-width: none;
+        margin-right: 0;
+        text-align: left;
+    }
+}
+

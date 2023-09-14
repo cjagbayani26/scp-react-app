@@ -8,14 +8,24 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('/scp-background.jpg'); /* Adjust the path to your image */
-    background-size: cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-attachment: fixed; /* Fixed background for scrolling */
+&::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to make it darker or lighter */
+    z-index: -1; /* Place the overlay behind the content */
 }
 
 .home {
+    background-image: url('../public/scp-background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 10); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,16 +71,16 @@ footer {
 /* Responsive styles for mobile and smaller screens */
 @media screen and (max-width: 768px) {
     .home h1 {
-        font-size: 3.5rem;
-        max-width: none;
+        font-size: 2rem;
+        max-width: 400px;
     }
 
     .home h2 {
-        font-size: 2.5rem;
+        font-size: 1rem;
         max-width: none;
     }
 
     footer {
-        font-size: 13px;
+        display: none;
     }
 }
