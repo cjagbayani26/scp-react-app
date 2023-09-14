@@ -5,10 +5,10 @@ function Nav({data})
 {
     return(
         <nav>
-            <img src="public/scp-logo.jpg" class="logo" alt=" "></img>
+            <img src="/scp-logo.jpeg" class="logo" alt=" "></img>
             <ul>
                 <li>
-                <Link to={"Home"}>HOME</Link>
+                <Link to={"Home"} className="link">HOME</Link>
                 </li>
                 {
                     data.map(

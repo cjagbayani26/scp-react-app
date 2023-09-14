@@ -14,14 +14,8 @@
 }
 
 .logo {
-    color: var(--bg-color);
-    display: flex;
-    align-items: center;
-    height: 50px;
-    z-index: 2; 
-    align-items: center;
-    column-gap: 0.5rem;
-    padding: 20px;
+    justify-content: flex-start;
+    height: 90px;
 }
 
 nav {
@@ -30,7 +24,10 @@ nav {
     margin-bottom: 1vh;
     overflow: hidden;
     display: flex;
-    column-gap: 3rem;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    
 }
 
 nav ul {
@@ -38,7 +35,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    
 }
 
 nav li {
@@ -61,3 +58,4 @@ nav li {
     color: rgb(250, 249, 249);
 
 }
+
