@@ -6,8 +6,7 @@ function SCP({scp})
 {
     return(
         <div className="component container">
-            <h2>Subject:</h2>
-            <h3>ITEM #: {scp.item}</h3>
+            <h1><b>Subject: </b> {scp.item}</h1>
             <h2>Object Class:</h2>
             <h3>{scp.object}</h3>
             <img src={process.env.PUBLIC_URL + scp.icon} alt={scp.icon} />

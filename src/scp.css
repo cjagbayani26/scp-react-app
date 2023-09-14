@@ -1,20 +1,39 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
 
+*{
+
+    image-rendering: 100px;
+}
+
+h1 {
+    color: white;
+    max-width: 800px;
+    margin-right: 20%;
+    font-size: 4rem;
+    font-weight: 500;
+    padding-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e50914;
+}
 .component {
     padding: 3rem;
+    
     font-family: "Poppins", sans-serif;
 }
 
 .container {
-    border: 1px solid darkgray;
-    box-shadow: 3px 5px #141414;
-    border-radius: 15px;
+    border: 3px solid rgb(255, 254, 254);
+    box-shadow: 5px 10px #ffffff;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 0, 0);
 }
 
-.image-style {
-    width: 200px; /* Set the width as per your design */
+.img-style {
+    width: 50px; /* Set the width as per your design */
     height: auto; /* Maintain aspect ratio */
     border: 2px solid #333; /* Add a border */
     /* Add more styles as needed */
   }
+
