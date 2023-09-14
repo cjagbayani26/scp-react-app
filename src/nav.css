@@ -1,4 +1,4 @@
-/* STYLES FOR THE NAV COMPONENT*/
+/* STYLES FOR THE NAV COMPONENT */
 
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
@@ -24,10 +24,10 @@ nav {
     margin-bottom: 1vh;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-    
 }
 
 nav ul {
@@ -35,7 +35,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center-align items horizontally */
 }
 
 nav li {
@@ -50,12 +51,12 @@ nav li {
     color: white;
     border-radius: 5px;
     background-color: rgb(255, 0, 0);
+    margin: 5px; /* Add spacing between items */
 }
 
 .link:hover {
     background-color: #f74343;
     padding: 10px;
     color: rgb(250, 249, 249);
-
 }
 

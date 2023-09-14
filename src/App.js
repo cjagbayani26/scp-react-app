@@ -11,17 +11,21 @@ function App() {
       <Nav data={data} />
 
       <Routes>
-        <Route path={"HOME"} index element={<Default />} />
-        {
-          data.map(
-            scp => (
-              <Route key={scp.item} 
-                     path={`${scp.item}`}
-                     element={<SCP scp={scp} />} />
-            )
+        <Route path="/" element={<Default />} /> {/* This is the default route */}
+        <Route path="HOME" index element={<Default />} /> {/* Add the "index" attribute here */}
+          {
+            data.map(
+              scp => (
+                <Route
+                      key={scp.item}
+                      path={`${scp.item}`}
+                      element={<SCP scp={scp} />}
+                />
           )
-        }
+        )
+       }
       </Routes>
+
     </Router>
   );
 }
