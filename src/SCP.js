@@ -7,7 +7,7 @@ function SCP({scp})
     return(
         <div className="component container">
             <h1><b>Subject: </b> {scp.item}</h1>
-            <h2><b>Object Class:</b>{scp.object}</h2>
+            <h2><b>Object Class:&nbsp; </b>{scp.object}</h2>
             <img
   src={process.env.PUBLIC_URL + scp.icon}
   alt={scp.icon}
@@ -23,7 +23,7 @@ function SCP({scp})
 />
             <h3>Containment Procedure: </h3>
             <p>{scp.containment}</p>
-            <h3>Description:</h3>
+            <h3>Description: </h3>
             <p>{scp.description}</p>
         </div>
 
